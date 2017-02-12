@@ -23,11 +23,13 @@ function guess() {
       setMessage("You Win! :)");
       showAnswer(true);
       showReplay();
-    } else if (attempt.value >= 10) {
+    }
+    else if (attempt.value >= 10) {
       setMessage("You Lose! :(");
       showAnswer(false);
       showReplay();
-    } else {
+    }
+    else {
       setMessage("Incorrect, try again.");
     }
 }
@@ -71,7 +73,7 @@ function getResults(input) {
 
 function setHiddenFields() {
   console.log('function setHiddenFields');
-  var answ = Math.floor(Math.random() * 10000;).toString();
+  var answ = Math.floor(Math.random() * 10000).toString();
   while (answ.length < 4) {
     answ = '0' + answ;
   }
