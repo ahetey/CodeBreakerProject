@@ -24,13 +24,13 @@ function guess() {
       showAnswer(1);
       showReplay();
     }
-    else if (attempt.value >= 10) {
+    else if (attempt.value <= 10) {
+      setMessage("Incorrect, try again.");
+    }
+    else {
       setMessage("You Lose! :(");
       showAnswer(0);
       showReplay();
-    }
-    else {
-      setMessage("Incorrect, try again.");
     }
 }
 
