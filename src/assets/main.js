@@ -21,7 +21,7 @@ function guess() {
     }
     if (getResults(input.value)) {
       setMessage("You Win! :)");
-      showAnswer(1);
+      showAnswer(true);
       showReplay();
     }
     else if (attempt.value <= 10) {
@@ -29,7 +29,7 @@ function guess() {
     }
     else {
       setMessage("You Lose! :(");
-      showAnswer(0);
+      showAnswer(false);
       showReplay();
     }
 }
